@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  /* overflow: hidden; */
+}
+body {
+  margin: 0;
+  overflow: hidden;
+}
+html,body{
+  background:linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.8)),url('../images/background3.jpg') no-repeat center;
+  background-size: 100% 100%;
+}
+.machine {
+  width: 100;
+  height: 1000px;
+  background: url("../images/machine.gif");
+  background-size: 50% 70%;
+  background-repeat: no-repeat;
+  transform: translate(25%, 2%);
+  position: relative;
+}
+.main {
+  top: 45%;
+  left: 21%;
+  transform: translate(-35%, -35%);
+  position: absolute;
+}
+.heart {
+  transform: translate(640px, 60%);
+}
+.score {
+  transform: translate(625px, 24px);
+  color: white;
+}
+.level {
+  transform: translate(171px, 52px);
+  color: white;
+}
+#btn-next {
+  transform: translate(110px, 45px);
+}
+#badimg {
+  width: 130px;
+  transform: translate(85px, 110px);
+}
+#hearttext {
+  transform: translate(380px, -150px);
+  color: white;
+  font-size: 25px;
+}
+#pointtext {
+  transform: translate(380px, -80px);
+  color: white;
+  font-size: 25px;
+}
+#badhead01 {
+  opacity: 0;
+}
+#badhead02 {
+  opacity: 0;
+}
+#badhead03 {
+  opacity: 0;
+}
+#hole7 {
+  width: 160px;
+  height: 200px;
+  transform: translate(-120px, 400px);
+}
+#hole8 {
+  width: 160px;
+  height: 200px;
+  transform: translate(65px, 210px);
+}
+#hole9 {
+  width: 160px;
+  height: 200px;
+  transform: translate(230px, -5px);
+}
+#hole4 {
+  width: 160px;
+  height: 200px;
+  transform: translate(-123px, -120px);
+}
+#hole5 {
+  width: 160px;
+  height: 200px;
+  transform: translate(65px, -310px);
+}
+#hole6 {
+  width: 160px;
+  height: 200px;
+  transform: translate(242px, -520px);
+}
+#hole1 {
+  width: 160px;
+  height: 200px;
+  transform: translate(-130px, -645px);
+}
+#hole2 {
+  width: 160px;
+  height: 200px;
+  transform: translate(65px, -840px);
+}
+#hole3 {
+  width: 160px;
+  height: 200px;
+  transform: translate(250px, -1045px);
+}
+#e7 {
+  background-size: 100px 100px;
+  transform: translate(100px, -10px);
+  display: none;
+}
+#e8 {
+  background-size: 100px 100px;
+  transform: translate(100px, -15px);
+  display: none;
+}
+#e9 {
+  background-size: 100px 100px;
+  transform: translate(100px, -30px);
+  display: none;
+}
+#e4 {
+  background-size: 100px 100px;
+  transform: translate(100px, 1px);
+  display: none;
+}
+#e5 {
+  background-size: 100px 100px;
+  transform: translate(100px, -5px);
+  display: none;
+}
+#e6 {
+  background-size: 100px 100px;
+  transform: translate(100px, 1px);
+  display: none;
+}
+#e1 {
+  background-size: 100px 100px;
+  transform: translate(100px, 0px);
+  display: none;
+}
+#e2 {
+  background-size: 100px 100px;
+  transform: translate(100px, 0px);
+  display: none;
+}
+#e3 {
+  background-size: 100px 100px;
+  transform: translate(100px, 0px);
+  display: none;
+}
+.levelup {
+  transform: translate(730px, -720px);
+  font-size: 60px;
+  color: white;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5), 0 0 5px rgba(3, 244, 15, 1),
+    0 0 25px rgba(3, 244, 15, 1);
+}

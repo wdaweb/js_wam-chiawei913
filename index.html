@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+  <link href="https://unpkg.com/nes.css/css/nes.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/animate.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+<title>漫威打地鼠</title>
+</head>
+<body>
+  <div class="heart" id='health-score'></div>
+  <div class="machine">
+    <div class="level">LEVEL:<span id="text-level">1</span></div>
+    <div class="score">SCORE:<span id="text-score">0</span></div>
+    <div class="main" id="game">
+      <div class='health-score' id='health-score'></div>
+      <div id="next_level" style="background:url('./images/caption1.png'); width: 600px; height: 500px; transform: translate(-17px,480px); display: none;">
+        <img src='./images/bad01.png' id='badimg'>
+        <p id='hearttext'>-0.5</p>
+        <p id='pointtext'>1</p>
+        <img src='./images/badhead01.png' id='badhead01'>
+        <img src='./images/badhead02.png' id='badhead02'>
+        <img src='./images/badhead03.png' id='badhead03'>
+        <input type="button" value="START" class="nes-btn is-primary" id="btn-next">
+      </div>
+        <div class="holes" id="hole7"><img src='./images/cursor_down3.gif' id="e7"></div>
+        <div class="holes" id="hole8"><img src='./images/cursor_down3.gif' id="e8"></div>
+        <div class="holes" id="hole9"><img src='./images/cursor_down3.gif' id="e9"></div>
+
+        <div class="holes" id="hole4"><img src='./images/cursor_down3.gif' id="e4"></div>
+        <div class="holes" id="hole5"><img src='./images/cursor_down3.gif' id="e5"></div>
+        <div class="holes" id="hole6"><img src='./images/cursor_down3.gif' id="e6"></div>
+
+        <div class="holes" id="hole1"><img src='./images/cursor_down3.gif' id="e1"></div>
+        <div class="holes" id="hole2"><img src='./images/cursor_down3.gif' id="e2"></div>
+        <div class="holes" id="hole3"><img src='./images/cursor_down3.gif' id="e3"></div>
+      <input type="button" style="transform: translate(70px, -900px);" value="START" class="nes-btn is-success" id="btn-start" >
+    </div> 
+  </div>
+  <div class="animate__animated animate__fadeInUp" style="display: none;" id="levelup">
+    <p class="levelup" id="leveltext"></p>
+  </div>
+  <!--最高分數:<br>
+  玩家: <span id="highscore-player">-</span><br>
+  分數: <span id="highscore-score">-</span>-->
+<script src='./js/player.js'></script>
+<script src='./js/health.js'></script>
+<script src='./js/level.js'></script>
+<!-- <script src='./js/monster.js'></script> -->
+</body>
+</html>
